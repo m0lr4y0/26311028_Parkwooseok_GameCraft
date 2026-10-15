@@ -1,8 +1,11 @@
 #pragma once
 #include "GameTime.h"
 #include "GameInput.h"
+#include "GraphicEngine.h"
 class GameScene;
+
 class App
+
 {
 public:
 	App();
@@ -14,7 +17,7 @@ public:
 	int Run();
 protected:
 	GameTime m_gameTime     {};
-
+	GraphicEngine* m_pGraphicEngine {};
 	GameInput* m_pGameInput {};
 	GameScene* m_pGameScene {};
 };
